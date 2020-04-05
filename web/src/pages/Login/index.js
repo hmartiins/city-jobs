@@ -2,12 +2,34 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FaUser, FaLock } from 'react-icons/fa';
 
+import api from '../../services/api';
+
 import avatar from './img/avatar.svg';
 import emailImg from './img/email.svg'
 
 import './style.css';
 
 export default function Login(){
+   const [id, setId] = useState('');
+   const history = useHistory();
+
+   async function handleLogin(e) {
+      e.preventDefault();
+
+      try {
+         const response = await api.post('sessions', { id });
+
+         console.log(response.data.name);
+
+         localStorage.setItem('userId', id);
+         localStorage.setItem('userName', response.data.name);
+
+         history.push('/profile');
+      } catch (err) {
+         alert('Falha ao tentar realizar o login, \nverifique se os campos estão preenchidos corretamente')
+      }
+   }
+
    return(
       <div className="container">
          <div className="img">
@@ -16,27 +38,39 @@ export default function Login(){
          <div className="loginContainer">
             <section className="form">
                <img className="av   atar" src={avatar} alt="avatar"/>
-               <h2>Welcome</h2>
-               <div className="inputDiv one">
-                  <i className="i">
-                     <FaUser size={16} />
-                  </i>
-                  <div className="div">
-                     <h5>Username</h5>
-                     <input type="text" className="input"/>
+               <form onSubmit={handleLogin}>
+                  <h2>Welcome</h2>
+                  <div className="inputDiv one">
+                     <i className="i">
+                        <FaUser size={16} />
+                     </i>
+                     <div className="div">
+                        {/* <h5>Username</h5> */}
+                        <input 
+                           placeholder="id"
+                           type="text" 
+                           className="input"
+                           value={id}
+                           onChange={e => setId(e.target.value)}
+                           />
+                     </div>
                   </div>
-               </div>
-               <div className="inputDiv pass">
-                  <i className="i">
-                     <FaLock size={16} />
-                  </i>
-                  <div className="div">
-                     <h5>Password</h5>
-                     <input type="password" className="input"/>
+                  <div className="inputDiv pass">
+                     <i className="i">
+                        <FaLock size={16} />
+                     </i>
+                     <div className="div">
+                        {/* <h5>Password</h5> */}
+                        <input  
+                           placeholder="password"
+                           type="password" 
+                           className="input"
+                        />
+                     </div>
                   </div>
-               </div>
-               <a href="#">Esqueceu sua senha ?</a>
-               <button className="button" type="submit">Entrar</button>
+                  <a href="#">Esqueceu sua senha ?</a>
+                  <button className="button" type="submit">Entrar</button>
+               </form>
             </section>
          </div>
       </div>

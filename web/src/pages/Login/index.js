@@ -10,19 +10,19 @@ import emailImg from './img/email.svg'
 import './style.css';
 
 export default function Login(){
-   const [id, setId] = useState('');
+   const [email, setEmail] = useState('');
    const history = useHistory();
 
    async function handleLogin(e) {
       e.preventDefault();
 
       try {
-         const response = await api.post('sessions', { id });
+         const response = await api.post('sessions', { email });
 
          console.log(response.data.name);
 
-         localStorage.setItem('userId', id);
-         localStorage.setItem('userName', response.data.name);
+         localStorage.setItem('userEmail', email);
+         localStorage.setItem('userName', response.data.email);
 
          history.push('/profile');
       } catch (err) {
@@ -47,12 +47,12 @@ export default function Login(){
                      <div className="div">
                         {/* <h5>Username</h5> */}
                         <input 
-                           placeholder="id"
-                           type="text" 
+                           placeholder="email"
+                           type="email" 
                            className="input"
-                           value={id}
-                           onChange={e => setId(e.target.value)}
-                           />
+                           value={email}
+                           onChange={e => setEmail(e.target.value)}
+                        />
                      </div>
                   </div>
                   <div className="inputDiv pass">

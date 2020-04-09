@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FaUser, FaLock } from 'react-icons/fa';
 
 import api from '../../services/api';
@@ -11,18 +11,16 @@ import './style.css';
 
 export default function Login(){
    const [email, setEmail] = useState('');
+   const [password, setPassword] = useState('');
    const history = useHistory();
 
    async function handleLogin(e) {
       e.preventDefault();
 
       try {
-         const response = await api.post('sessions', { email });
+         const response = await api.post('/auth/authenticate/', { email, password });
 
-         console.log(response.data.name);
-
-         localStorage.setItem('userEmail', email);
-         localStorage.setItem('userName', response.data.email);
+         //console.log(response.data.name);
 
          history.push('/profile');
       } catch (err) {
@@ -46,6 +44,7 @@ export default function Login(){
                      </i>
                      <div className="div">
                         {/* <h5>Username</h5> */}
+
                         <input 
                            placeholder="email"
                            type="email" 
@@ -62,13 +61,15 @@ export default function Login(){
                      <div className="div">
                         {/* <h5>Password</h5> */}
                         <input  
+                           value = {password}
+                           onChange = {e => setPassword(e.target.value)}
                            placeholder="password"
                            type="password" 
                            className="input"
                         />
                      </div>
                   </div>
-                  <a href="#">Esqueceu sua senha ?</a>
+                  <a href="slakk">Esqueceu sua senha ?</a>
                   <button className="button" type="submit">Entrar</button>
                </form>
             </section>

@@ -20,10 +20,13 @@ export default function Login(){
       try {
          const response = await api.post('/auth/authenticate/', { email, password });
 
-         //console.log(response.data.name);
+         console.log(response.data.email);
 
+         localStorage.setItem('userEmail', email);
+         
          history.push('/profile');
       } catch (err) {
+         console.error('Error when logging in');
          alert('Falha ao tentar realizar o login, \nverifique se os campos estão preenchidos corretamente')
       }
    }
@@ -35,9 +38,9 @@ export default function Login(){
          </div>
          <div className="loginContainer">
             <section className="form">
-               <img className="av   atar" src={avatar} alt="avatar"/>
+               <img className="avatar" src={avatar} alt="avatar"/>
                <form onSubmit={handleLogin}>
-                  <h2>Welcome</h2>
+                  <h2>Bem-vindo</h2>
                   <div className="inputDiv one">
                      <i className="i">
                         <FaUser size={16} />

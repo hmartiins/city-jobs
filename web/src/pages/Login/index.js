@@ -18,9 +18,9 @@ export default function Login(){
       e.preventDefault();
 
       try {
-         const response = await api.post('/auth/authenticate/', { email, password });
+         await api.post('/auth/authenticate/', { email, password });
 
-         console.log(response.data.email);
+         //console.log(response.data.email);
 
          localStorage.setItem('userEmail', email);
          
@@ -34,7 +34,7 @@ export default function Login(){
    return(
       <div className="container">
          <div className="img">
-            <img src={emailImg} />
+            <img src={emailImg} alt="icon" />
          </div>
          <div className="loginContainer">
             <section className="form">

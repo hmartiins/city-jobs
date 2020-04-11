@@ -26,15 +26,15 @@ export default function Register(){
          password,
       }
       try {
-         if(password == passwordConfirm){
+         if(password === passwordConfirm){
             await api.post('auth/register', data);
             
-            alert(`Cadastrado com sucesso!`).
+            alert(`Cadastrado com sucesso!`);
             console.log('Cadastrado com sucesso no banco');
 
-            history.push('/profile');
+            history.push('/');
          }
-         else if(password != passwordConfirm){
+         else if(password !== passwordConfirm){
             alert('As senhas não são iguais');
          }
       } catch (err) {
@@ -110,8 +110,8 @@ export default function Register(){
                </form>
             </section>
          </div>
-         <div className="img">
-            <img src={img1}/>
+         <div className="img">   
+            <img src={img1} alt="icon"/>
          </div>
       </div>
    );

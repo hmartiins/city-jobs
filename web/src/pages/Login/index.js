@@ -72,7 +72,7 @@ export default function Login(){
                         />
                      </div>
                   </div>
-                  <a href="slakk">Esqueceu sua senha ?</a>
+                  <a href="forgotpassword">Esqueceu sua senha ?</a>
                   <button className="button" type="submit">Entrar</button>
                </form>
             </section>

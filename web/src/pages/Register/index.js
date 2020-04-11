@@ -13,7 +13,7 @@ export default function Register(){
    const[name, setName] = useState();
    const[email, setEmail] = useState();
    const[password, setPassword] = useState();
-   const [passwordConfirm, setPasswordConfirm] = useState();
+   const[passwordConfirm, setPasswordConfirm] = useState();
    
    const history = useHistory();
 

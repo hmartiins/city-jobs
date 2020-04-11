@@ -41,7 +41,7 @@ export default function ResetPassword(){
          <div className="resetContainer">
             <section className="form">
                <form onSubmit={handleResetPassword}>
-                  <h2>Aleterar sua senha</h2>
+                  <h2>Alterar sua senha</h2>
                   <div className="inputDiv">
                      <i className="i">
                         <FaKey size={19} />

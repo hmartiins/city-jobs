@@ -38,7 +38,7 @@ export default StyleSheet.create({
    textInput: {
       flex: 1,
       paddingLeft: 10,
-      color: '#6c63ff'
+      color: 'black'
    },
    button: {
       alignItems: 'center',
@@ -55,5 +55,8 @@ export default StyleSheet.create({
       color: 'white',
       fontSize: 18,
       fontWeight: 'bold'
+   },
+   icons: {
+      marginTop: 13.4
    }
 });

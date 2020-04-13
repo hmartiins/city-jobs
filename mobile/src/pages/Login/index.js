@@ -50,13 +50,17 @@ export default class Login extends React.Component{
         >
           <Text style={styles.textFooter}>E-mail</Text>
           <View style={styles.action}>
-            <FontAwesome 
-              name='user-o' 
+            <FontAwesome
+              keyboardType= {'email-adress'}
+              style={styles.icons} 
+              name='at' 
               size={20}
             />
             <TextInput 
               placeholder="email"
               style={styles.textInput}
+              
+              returnKeyType= 'next'
               onChangeText={(text) => this.textInputChange(text)}
             />
             {this.state.check_textInputChange ?
@@ -73,12 +77,14 @@ export default class Login extends React.Component{
           }]}>Senha</Text>
           <View style={styles.action}>
             <FontAwesome 
+              style={styles.icons} 
               name='lock' 
               size={20}
             />
             {this.state.secureTextEntry ?
               <TextInput 
                 placeholder="senha"
+                returnKeyType='next'
                 secureTextEntry={true}
                 style={styles.textInput}
                 value={this.state.password}
@@ -114,7 +120,16 @@ export default class Login extends React.Component{
               }
             </TouchableOpacity>
           </View>
-          <Text style={{color: '#6c63ff', marginTop: 15}}>Esqueceu sua senha ?</Text>
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate('ForgotPassword')}
+          >
+            <Text 
+              style={{color: '#6c63ff', marginTop: 15}}
+              hitSlop={{ top: 20, bottom: 20, left: 50, right: 50 }}
+            >
+              Esqueceu sua senha ?
+            </Text>
+          </TouchableOpacity>
           <View style={styles.button}>
             <LinearGradient colors={['#6c63ff', '#3b5998']} style={styles.login}>
               <Text style={styles.textLogin}>Entrar</Text>

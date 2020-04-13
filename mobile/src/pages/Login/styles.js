@@ -1,36 +1,59 @@
-import { StyleSheet, StatusBar } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
    container: {
       flex: 1,
-      paddingHorizontal: 22,
-      //paddingTop: StatusBar.currentHeight + 20,
-      backgroundColor: '#f0f0f5',
+      backgroundColor: '#043563'
    },
-   top: {
-      alignContent: "center",
-      alignItems: "center",
+   header: {
+      flex: 1,
+      justifyContent: 'flex-end',
+      paddingHorizontal: 20,
+      paddingBottom: 50,
    },
-   content: {
-      alignContent: "center",
-      alignItems: "center",
+   footer: {
+      flex: 3,
+      backgroundColor: '#fff',
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
+      paddingHorizontal: 20,
+      paddingVertical: 30
    },
-   inputs: {
-      backgroundColor: 'white',
-      height: 40, 
-      width: 350, 
-      borderColor: '#a3a3a3',
-      borderWidth: 2,
-      borderRadius: 30,
-      
+   textHeader: {
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize: 30
    },
-   inputsTwo: {
-      backgroundColor: 'white',
-      height: 40, 
-      width: 350, 
-      borderColor: '#a3a3a3',
-      borderWidth: 2,
-      borderRadius: 30,
-      marginTop: 15,
+   textFooter: {
+      color: '#043563',
+      fontSize: 22
+   },
+   action: {
+      flexDirection: 'row',
+      marginTop: 10,
+      borderBottomWidth: 1,
+      borderBottomColor: '#f2f2f2',
+      paddingBottom: 5,
+   },
+   textInput: {
+      flex: 1,
+      paddingLeft: 10,
+      color: '#6c63ff'
+   },
+   button: {
+      alignItems: 'center',
+      marginTop: 50
+   },
+   login:{
+      width: '100%',
+      height: 50,
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: 10
+   },
+   textLogin: {
+      color: 'white',
+      fontSize: 18,
+      fontWeight: 'bold'
    }
 });

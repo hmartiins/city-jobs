@@ -72,7 +72,8 @@ export default function Login(){
                         />
                      </div>
                   </div>
-                  <a href="forgotpassword">Esqueceu sua senha ?</a>
+                  <a href="forgotpassword" className="aRegister">Esqueceu sua senha ?</a>
+                  <a href="register">Não tenho cadastro !</a>
                   <button className="button" type="submit">Entrar</button>
                </form>
             </section>

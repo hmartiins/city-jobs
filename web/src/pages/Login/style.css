@@ -71,6 +71,10 @@ section{
   margin-bottom: 4px;
 }
 
+.aRegister{
+  position: absolute;
+}
+
 button:hover{
   background-position: right;
 }

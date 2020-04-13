@@ -7,6 +7,8 @@ import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 
+import Profile from './pages/Profile';
+
 export default function Routes(){
    return(
       <BrowserRouter>
@@ -15,6 +17,7 @@ export default function Routes(){
             <Route path='/register' component={ Register } />
             <Route path='/forgotPassword' component={ ForgotPassword } />
             <Route path='/resetPassword' component={ ResetPassword } />
+            <Route path='/profile' component={ Profile } />
          </Switch>
       </BrowserRouter>
    )

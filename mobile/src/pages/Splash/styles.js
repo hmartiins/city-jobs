@@ -6,7 +6,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 export default StyleSheet.create({
    container: {
       flex: 1,
-      backgroundColor: '#043563'
+      backgroundColor: '#26208a'
    },
    header: {
       flex: 2,
@@ -32,13 +32,15 @@ export default StyleSheet.create({
    },
    text: {
       color: 'grey',
-      marginTop: 5
+      marginTop: 15,
+      fontSize: 16
    },
    button: {
       alignItems: "flex-end",
-      marginTop: 30
+      marginTop: 20
    },
    login: {
+      marginTop: 30,
       width: 150,
       height: 40,
       justifyContent: 'center',
@@ -49,6 +51,7 @@ export default StyleSheet.create({
    textLogin: {
       color: 'white',
       fontWeight: 'bold',
+      fontSize: 16.8
    }
 
 });

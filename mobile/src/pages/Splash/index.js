@@ -27,7 +27,7 @@ export default class Splash extends React.Component{
                <Text style={styles.title}> 
                   Se conecte com todos ao seu redor !
                </Text>
-               <Text style={styles.text}>Faça login</Text>
+               <Text style={styles.text}>Faça login agora !</Text>
                <View style={styles.button}>
                   <TouchableOpacity 
                      onPress={() => this.props.navigation.navigate('Login')}

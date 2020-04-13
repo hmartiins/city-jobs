@@ -21,7 +21,7 @@ export default class Login extends React.Component{
   }
 
   textInputChange(value){
-    if(value.length !== 0){
+    if(value.length > 2){
       this.setState({
         check_textInputChange: true
       });
@@ -59,7 +59,6 @@ export default class Login extends React.Component{
             <TextInput 
               placeholder="email"
               style={styles.textInput}
-              
               returnKeyType= 'next'
               onChangeText={(text) => this.textInputChange(text)}
             />
@@ -68,6 +67,7 @@ export default class Login extends React.Component{
                 name='check-circle'
                 color='green'
                 size={20}
+                style={styles.iconsRNI}
               />
             :null}
           </View>
@@ -110,12 +110,14 @@ export default class Login extends React.Component{
                   name='eye-off'
                   color='gray'
                   size={20}
+                  style={styles.iconsRNI}
                 />
                 :
                 <Feather 
                   name='eye'
                   color='gray'
                   size={20}
+                  style={styles.iconsRNI}
                 />
               }
             </TouchableOpacity>

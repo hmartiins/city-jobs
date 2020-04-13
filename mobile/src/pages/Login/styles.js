@@ -9,7 +9,7 @@ export default StyleSheet.create({
       flex: 1,
       justifyContent: 'flex-end',
       paddingHorizontal: 20,
-      paddingBottom: 50,
+      paddingBottom: 40,
    },
    footer: {
       flex: 3,

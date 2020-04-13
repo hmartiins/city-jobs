@@ -5,9 +5,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Splash from './pages/Splash';
+
 import Login from './pages/Login';
 import Register from './pages/Register';
+
 import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +22,7 @@ export default function Routes() {
         <Stack.Screen name="Register" component={Register}/>
         <Stack.Screen name="Splash" component={Splash}/>
         <Stack.Screen name="ForgotPassword" component={ForgotPassword}/>
+        <Stack.Screen name="ResetPassword" component={ResetPassword}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

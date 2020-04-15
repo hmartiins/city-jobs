@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Login from './pages/Login';
-import Register from './pages/Register';
+import Login from './pages/FirstsPages/Login';
+import Register from './pages/FirstsPages/Register';
 
-import ForgotPassword from './pages/ForgotPassword';
-import ResetPassword from './pages/ResetPassword';
+import ForgotPassword from './pages/FirstsPages/ForgotPassword';
+import ResetPassword from './pages/FirstsPages/ResetPassword';
 
 import Profile from './pages/Profile';
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaAt } from 'react-icons/fa';
 import { useHistory } from 'react-router-dom';
 
-import api from '../../services/api';
+import api from '../../../services/api';
 
 import forgotPassword from './img/forgotPassword.svg';
 

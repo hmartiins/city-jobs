@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FaUser, FaLock } from 'react-icons/fa';
 
-import api from '../../services/api';
+import api from '../../../services/api';
 
 import avatar from './img/avatar.svg';
 import emailImg from './img/email.svg'
 
 import './style.css';
+import '../global.css';
 
 export default function Login(){
    const [email, setEmail] = useState('');

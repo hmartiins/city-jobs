@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FaAddressCard, FaAt, FaLock } from 'react-icons/fa';
 
-import api from '../../services/api';
+import api from '../../../services/api';
 
 import img1 from './img/img.svg'
 

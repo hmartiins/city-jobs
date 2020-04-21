@@ -1,0 +1,27 @@
+.toolbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 56px;
+  background-color: #6C63FF;
+}
+.toolbarNavigation{
+  display: flex;
+  height: 100%; 
+  align-items: center;
+  padding: 0 1rem;
+}
+.toolbarLogo a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.toolbarNavigationItens a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.toolbarNavigationItens a:hover,
+.toolbarNavigationItens a:active{
+  color: #fa923f;
+}

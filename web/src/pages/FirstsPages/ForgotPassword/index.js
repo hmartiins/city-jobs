@@ -7,7 +7,7 @@ import api from '../../../services/api';
 
 import forgotPassword from './img/forgotPassword.svg';
 
-import './style.css';
+import './styleForgot.css';
 
 export default function ForgotPassword(){
   const[email, setEmail] = useState();

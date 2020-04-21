@@ -6,7 +6,7 @@ import api from '../../../services/api';
 
 import img1 from './img/img.svg'
 
-import './style.css'
+import './styleRegister.css'
 
 export default function Register(){
 

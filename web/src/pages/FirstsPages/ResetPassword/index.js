@@ -7,7 +7,7 @@ import api from '../../../services/api';
 
 import resetPassword from './img/resetPassword.svg';
 
-import './style.css';
+import './styleReset.css';
 
 export default function ResetPassword(){
 

@@ -7,7 +7,7 @@ import api from '../../../services/api';
 import avatar from './img/avatar.svg';
 import emailImg from './img/email.svg'
 
-import './style.css';
+import classes from './styles.module.css'
 import '../global.css';
 
 export default function Login(){
@@ -33,20 +33,20 @@ export default function Login(){
    }
 
    return(
-      <div className="container">
-         <div className="img">
+      <div className={classes.container}>
+         <div className={classes.img}>
             <img src={emailImg} alt="icon" />
          </div>
-         <div className="loginContainer">
-            <section className="form">
-               <img className="avatar" src={avatar} alt="avatar"/>
+         <div className={classes.loginContainer}>
+            <section className={classes.form}>
+               <img className={classes.avatar} src={avatar} alt="avatar"/>
                <form onSubmit={handleLogin}>
                   <h2>Bem-vindo</h2>
-                  <div className="inputDiv one">
+                  <div className={[classes.inputDiv, classes.one].join(' ')}>
                      <i className="i">
                         <FaUser size={16} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         {/* <h5>Username</h5> */}
 
                         <input 
@@ -58,7 +58,7 @@ export default function Login(){
                         />
                      </div>
                   </div>
-                  <div className="inputDiv pass">
+                  <div className={classes.inputDiv}>
                      <i className="i">
                         <FaLock size={16} />
                      </i>
@@ -69,11 +69,11 @@ export default function Login(){
                            onChange = {e => setPassword(e.target.value)}
                            placeholder="password"
                            type="password" 
-                           className="input"
+                           className={classes.input}
                         />
                      </div>
                   </div>
-                  <a href="forgotpassword" className="aRegister">Esqueceu sua senha ?</a>
+                  <a href="forgotpassword" className={classes.aRegister}>Esqueceu sua senha ?</a>
                   <a href="register">Não tenho cadastro !</a>
                   <button className="button" type="submit">Entrar</button>
                </form>

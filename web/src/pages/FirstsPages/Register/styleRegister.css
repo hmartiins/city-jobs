@@ -6,7 +6,18 @@
   grid-gap: 7rem;
   padding: 0 2rem;
 }
-
+a{
+   display: block;
+   text-align: right;
+   text-decoration: none;
+   color: #999;
+   font-size: 0.9rem;
+   transition: .3s;
+}
+ 
+a:hover{
+   color: #6C63FF;
+}
 .img{
   display: flex;
   justify-content: flex-start;

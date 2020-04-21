@@ -4,9 +4,10 @@ import { FaAddressCard, FaAt, FaLock } from 'react-icons/fa';
 
 import api from '../../../services/api';
 
-import img1 from './img/img.svg'
+import img1 from './img/img.svg';
 
-import './styleRegister.css'
+import classes from './styles.module.css';
+import '../global.css';
 
 export default function Register(){
 
@@ -44,16 +45,16 @@ export default function Register(){
    }
 
    return(
-      <div className="container">
-         <div className="registerContainer">
-            <section className="form">
+      <div className={classes.container}>
+         <div className={classes.registerContainer}>
+            <section className={classes.form}>
                <form onSubmit={handleRegister}>
                   <h2>Cadastro</h2>
-                  <div className="inputDiv one">
+                  <div className={[classes.inputDiv, classes.one].join(' ')}>
                      <i className="i">
                         <FaAddressCard size={17} /> 
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input 
                            placeholder="nome"
                            type="text" 
@@ -63,11 +64,11 @@ export default function Register(){
                         />
                      </div>
                   </div>
-                  <div className="inputDiv one">
+                  <div className={[classes.inputDiv, classes.one].join(' ')}>
                      <i className="i">
                         <FaAt size={17} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input 
                            placeholder="email"
                            type="email" 
@@ -77,11 +78,11 @@ export default function Register(){
                         />
                      </div>
                   </div>
-                  <div className="inputDiv pass">
+                  <div className={[classes.inputDiv, classes.pass].join(' ')}>
                      <i className="i">
                         <FaLock size={16} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input  
                            placeholder="senha"
                            type="password" 
@@ -91,11 +92,11 @@ export default function Register(){
                         />
                      </div>
                   </div>
-                  <div className="inputDiv pass">
+                  <div className={[classes.inputDiv, classes.pass].join(' ')}>
                      <i className="i">
                         <FaLock size={16} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input  
                            placeholder="confirme sua senha"
                            type="password" 
@@ -110,7 +111,7 @@ export default function Register(){
                </form>
             </section>
          </div>
-         <div className="img">   
+         <div className={classes.img}>   
             <img src={img1} alt="icon"/>
          </div>
       </div>

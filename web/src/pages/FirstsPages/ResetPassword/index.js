@@ -7,7 +7,8 @@ import api from '../../../services/api';
 
 import resetPassword from './img/resetPassword.svg';
 
-import './styleReset.css';
+import classes from './styles.module.css'
+import '../global.css';
 
 export default function ResetPassword(){
 
@@ -34,34 +35,34 @@ export default function ResetPassword(){
    }
 
    return(
-      <div className="container">
-         <div className="img">
+      <div className={classes.container}>
+         <div className={classes.img}>
             <img src={resetPassword} alt="icon"/>
          </div>
-         <div className="resetContainer">
-            <section className="form">
+         <div className={classes.resetContainer}>
+            <section className={classes.form}>
                <form onSubmit={handleResetPassword}>
                   <h2>Alterar sua senha</h2>
-                  <div className="inputDiv">
+                  <div className={classes.inputDiv}>
                      <i className="i">
                         <FaKey size={19} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input  
                            id= {token}
                            onChange= {e => setToken(e.target.value)}
                            placeholder="token"
                            type="text" 
-                           className="input"
+                           className={classes.input}
                         />
                      </div>
                   </div>
-                  <div className="space" />
-                  <div className="inputDiv">
+                  <div className={classes.space}/>
+                  <div className={classes.inputDiv}>
                      <i className="i">
                         <FaAt size={19} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input  
                            id= {email}
                            onChange= {e => setEmail(e.target.value)}
@@ -71,11 +72,11 @@ export default function ResetPassword(){
                         />
                      </div>
                   </div>
-                  <div className="inputDiv">
+                  <div className={classes.inputDiv}>
                      <i className="i">
                         <FaLock size={19} />
                      </i>
-                     <div className="div">
+                     <div className={classes.div}>
                         <input  
                            id= {password}
                            onChange= {e => setPassword(e.target.value)}

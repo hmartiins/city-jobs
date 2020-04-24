@@ -4,7 +4,9 @@
   left: 0;
   width: 100vw;
   height: 56px;
-  background-color: #6C63FF;
+  background: linear-gradient(-45deg, #439df1, #6c63ff, #3ac4dd, #6c63ff);
+  background-size: 400% 400%;
+  animation: change 7s ease-in-out infinite;
 }
 .toolbarNavigation{
   display: flex;
@@ -55,3 +57,15 @@
     margin-left: 0;
   }
 }
+
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}  

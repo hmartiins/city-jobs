@@ -13,7 +13,10 @@ import '../global.css';
 export default function Login(){
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
+   
    const history = useHistory();
+
+   const login = localStorage.getItem('login');
 
    async function handleLogin(e) {
       e.preventDefault();
@@ -21,9 +24,8 @@ export default function Login(){
       try {
          await api.post('/auth/authenticate/', { email, password });
 
-         //console.log(response.data.email);
-
          localStorage.setItem('userEmail', email);
+         localStorage.setItem('login', 'true');
          
          history.push('/profile');
       } catch (err) {
@@ -31,9 +33,15 @@ export default function Login(){
          alert('Falha ao tentar realizar o login, \nverifique se os campos estão preenchidos corretamente')
       }
    }
+   
+   function verifyLogin(){
+      if(login === 'true'){
+         history.push('/profile');
+      }
+   }
 
    return(
-      <div className={classes.container}>
+      <div className={classes.container} onLoad={verifyLogin()}>
          <div className={classes.img}>
             <img src={emailImg} alt="icon" />
          </div>

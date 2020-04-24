@@ -7,6 +7,8 @@ import Register from './pages/FirstsPages/Register/index.js';
 import ForgotPassword from './pages/FirstsPages/ForgotPassword/index.js';
 import ResetPassword from './pages/FirstsPages/ResetPassword/index.js';
 
+import NotFound from './pages/NotFound/index.js';
+
 import Profile from './pages/Profile/index.js';
 
 export default function Routes(){
@@ -14,10 +16,11 @@ export default function Routes(){
       <BrowserRouter>
          <Switch>
             <Route path='/' exact component={ Login } />
-            <Route path='/register' component={ Register } />
-            <Route path='/forgotPassword' component={ ForgotPassword } />
-            <Route path='/resetPassword' component={ ResetPassword } />
-            <Route path='/profile' component={ Profile } />
+            <Route path='/register' exact component={ Register } />
+            <Route path='/forgotPassword' exact component={ ForgotPassword } />
+            <Route path='/resetPassword' exact component={ ResetPassword } />
+            <Route path='/profile' exact component={ Profile } />
+            <Route component={ NotFound } />
          </Switch>
       </BrowserRouter>
    )

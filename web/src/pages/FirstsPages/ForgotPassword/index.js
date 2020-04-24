@@ -57,7 +57,7 @@ export default function ForgotPassword(){
                    onChange= {e => setEmail(e.target.value)}
                    placeholder="email"
                    type="email" 
-                   className="input"
+                   className={classes.input}
                  />
               </div>
             </div>

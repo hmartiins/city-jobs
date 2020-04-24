@@ -12,16 +12,46 @@
   align-items: center;
   padding: 0 1rem;
 }
+.toolbarLogo{
+  margin-left: 1rem;
+}
 .toolbarLogo a{
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
+.toolbarNavigationItens ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.toolbarNavigationItens li{
+  padding: 0 0.5rem;
+}
 .toolbarNavigationItens a{
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+.spacer{
+  flex: 1;
+}
 .toolbarNavigationItens a:hover,
 .toolbarNavigationItens a:active{
-  color: #fa923f;
+  color: #26208a;
+}
+
+@media (max-width: 768px){
+  .toolbarNavigationItens{
+    display: none;
+  }
+}
+
+@media (min-width: 770px){
+  .toolbarToggleButton{
+    display: none;
+  }
+  .toolbarLogo{
+    margin-left: 0;
+  }
 }

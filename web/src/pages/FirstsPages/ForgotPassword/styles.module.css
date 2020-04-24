@@ -57,14 +57,12 @@ section{
    padding: 5px 0;
    border-bottom: 2px solid #d9d9d9;
 }
-
 button:hover{
   background-position: right;
 }
 .text .textPass{
   font-size: 18px;
 }
-
 @media screen and (max-width: 1050px){
   .container{
      grid-gap: 5rem;

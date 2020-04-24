@@ -34,6 +34,11 @@ section{
   font-size: 2.9rem;
 }
 
+.inputDiv > div{
+  position: relative;
+  height: 45px;
+}
+
 .inputDiv > div > input{
   position: absolute;
   left: 0;

@@ -53,6 +53,11 @@ section{
   border-bottom: 2px solid #d9d9d9;
 }
 
+.inputDiv > div{
+  position: relative;
+  height: 45px;
+}
+
 .inputDiv > div > input{
   position: absolute;
   left: 0;
@@ -69,7 +74,7 @@ section{
 }
 
 .space{
-   margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 button:hover{

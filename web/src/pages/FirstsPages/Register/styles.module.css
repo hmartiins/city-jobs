@@ -83,16 +83,6 @@ section{
  height: 45px;
 }
 
-.inputDiv > div > h5{
- position: absolute;
- left: 10px;
- top: 50%;
- transform: translateY(-50%);
- color: #999;
- font-size: 18px;
- transition: .3s;
-}
-
 .inputDiv.pass{
  margin-bottom: 4px;
 }

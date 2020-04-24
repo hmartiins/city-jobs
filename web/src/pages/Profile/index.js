@@ -13,13 +13,11 @@ export default function Profile(){
          const login = localStorage.getItem('login');
    
          if(login !== 'true'){
-            history.push('/');
-            
-            alert('Faça login no sistema !!')
+            history.push('/unauthorized');
          }
 
       } catch (err) {
-         history.push('/');
+         history.push('/unauthorized');
       }
    }
       

@@ -3,7 +3,7 @@ import React from 'react';
 import img404 from './img/pageNotFound.svg';
 
 import classes from './styles.module.css';
-import '../../global.css';
+import '../../../global.css';
 
 export default function Login(){
    return(

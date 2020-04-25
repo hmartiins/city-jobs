@@ -8,7 +8,7 @@ import api from '../../services/api';
 export default function Profile(){
    const history = useHistory();
 
-   async function verifyLogin(){
+   function verifyLogin(){
       try {
          const login = localStorage.getItem('login');
    
@@ -24,6 +24,6 @@ export default function Profile(){
    return(
       <div className="container" onLoad={verifyLogin()}>
          <NavigationBar />
-      </div>
+      </div>   
    );
 }

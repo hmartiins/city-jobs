@@ -29,11 +29,14 @@
   display: flex;
 }
 .toolbarNavigationItens li{
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
 }
 .toolbarNavigationItens a{
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+.a{
+  margin-right: 20px;
 }
 .spacer{
   flex: 1;
@@ -41,6 +44,13 @@
 .toolbarNavigationItens a:hover,
 .toolbarNavigationItens a:active{
   color: #26208a;
+}
+
+.button{
+  background-color: none;
+  background: none;
+  border-style: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px){

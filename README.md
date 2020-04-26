@@ -10,12 +10,39 @@ An application to find service providers for your problem, where the person can 
 
 ## Installation
 
-Windows:
+Cloning the Repository
+
+```sh
+$ git clone https://github.com/hmartiins/city-jobs
+$ cd city-jobs  
+```
+
+###### Inside the backend folder, execute:
+
+```sh
+$  yarn 
+$  node src/index.js 
+```
+
+###### or
+
+```sh
+$ npm install 
+$ node src/index.js 
+```
 
 ###### Inside the web folder, execute:
 
 ```sh
-npm install 
+$ yarn 
+$ npm start 
+```
+
+###### or
+
+```sh
+$ npm install 
+$ npm start 
 ```
 
 ## Meta
@@ -31,6 +58,12 @@ Henrique Martins – [@Henrique Martins](https://www.facebook.com/profile.php?id
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature/...`)
 5. Create a new Pull Request
+
+###### or
+
+1. Go to Issues
+2. Create a new issue
+3. Say something you would like there and click on "Submit new Issue"
 
 
 <!-- Markdown link & img dfn's -->

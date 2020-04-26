@@ -17,7 +17,7 @@ $ git clone https://github.com/hmartiins/city-jobs
 $ cd city-jobs  
 ```
 
-###### Inside the backend folder, execute:
+Inside the backend folder, execute:
 
 ```sh
 $  yarn 
@@ -31,7 +31,7 @@ $ npm install
 $ node src/index.js 
 ```
 
-###### Inside the web folder, execute:
+Inside the web folder, execute:
 
 ```sh
 $ yarn 
@@ -45,11 +45,6 @@ $ npm install
 $ npm start 
 ```
 
-## Meta
-
-Henrique Martins – [@Henrique Martins](https://www.facebook.com/profile.php?id=100004602799158) – hmartins224@gmail.com
-
-[https://github.com/hmartiins/](https://github.com/hmartiins/)
 
 ## Contributing
 
@@ -65,6 +60,11 @@ Henrique Martins – [@Henrique Martins](https://www.facebook.com/profile.php?id
 2. Create a new issue
 3. Say something you would like there and click on "Submit new Issue"
 
+## Meta
+
+Henrique Martins – [@Henrique Martins](https://www.facebook.com/profile.php?id=100004602799158) – hmartins224@gmail.com
+
+[https://github.com/hmartiins/](https://github.com/hmartiins/)
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square

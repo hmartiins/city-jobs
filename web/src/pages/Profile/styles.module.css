@@ -1,0 +1,14 @@
+.container{
+   display: flex;
+   flex: 1;
+   flex-direction: row;
+}
+.content{
+   margin-top: 56px;
+   background: rgb(38,32,138);
+   background: linear-gradient(141deg, rgba(38,32,138,1) 44%, rgba(6,4,46,1) 97%);
+   height: 18rem;
+}
+.avatar{
+   padding: 40px 90px;
+}

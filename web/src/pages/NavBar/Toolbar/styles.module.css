@@ -4,9 +4,7 @@
   left: 0;
   width: 100vw;
   height: 56px;
-  background: linear-gradient(-45deg, #439df1, #6c63ff, #3ac4dd, #6c63ff);
-  background-size: 400% 400%;
-  animation: change 7s ease-in-out infinite;
+  background-color: #333333;
 }
 .toolbarNavigation{
   display: flex;
@@ -18,7 +16,7 @@
   margin-left: 1rem;
 }
 .toolbarLogo a{
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -32,7 +30,7 @@
   padding: 0 0.8rem;
 }
 .toolbarNavigationItens a{
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-decoration: none;
 }
 .a{
@@ -43,7 +41,7 @@
 }
 .toolbarNavigationItens a:hover,
 .toolbarNavigationItens a:active{
-  color: #26208a;
+  color: #fff;
 }
 
 .button{
@@ -51,6 +49,11 @@
   background: none;
   border-style: none;
   cursor: pointer;
+}
+
+.logout FaPowerOff:hover,
+.logout FaPowerOff:active{
+  color: red;
 }
 
 @media (max-width: 768px){
@@ -67,15 +70,3 @@
     margin-left: 0;
   }
 }
-
-@keyframes change{
-  0%{
-    background-position: 0 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0% 50%;
-  }
-}  

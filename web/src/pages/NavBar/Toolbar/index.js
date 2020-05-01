@@ -22,7 +22,7 @@ export default function Toolbar(props){
          <div className={classes.toolbarToggleButton}>
             <DrawerToggleButton click={props.drawerClickHandle}/>
          </div>
-         <div className={classes.toolbarLogo}><a href="/">Logo</a></div>
+         <div className={classes.toolbarLogo}><a href="/">CITY JOBS</a></div>
          <div className={classes.spacer} />
          <div className={classes.toolbarNavigationItens}>
             <ul>
@@ -31,7 +31,7 @@ export default function Toolbar(props){
             </ul>
          </div>
          <button onClick={handleLougout} className={classes.button} type="button">
-            <FaPowerOff size={25} color="#E02041" />
+            <FaPowerOff size={25} color="#e5e5e5" className={classes.logout} />
          </button>
       </nav>
       </header>

@@ -28,7 +28,16 @@ const userSchema = new mongoose.Schema({
    createdAt: {
       type: Date,
       default: Date.now,
-   }
+   },
+   specialty: {
+     type: String,
+     required: true, 
+   },
+   born: {
+      type: Date,
+      required: true, 
+   },
+
 });
 
 userSchema.pre('save', async function(next){

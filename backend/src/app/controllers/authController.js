@@ -19,10 +19,14 @@ function generateToken(params = {}){
 router.post('/register', async (request, response) => {
    const { email } = request.body;
    const { description } = request.body;
+   const { specialty } = request.body;
 
    try {
       if(await User.findOne({ email })){
          return response.status(400).send({ error: 'User already exist' });
+      }
+      if(await specialty.length > 40){
+         return response.status(400).send({ error: 'Speciality extends' });
       }
       if(await description.length > 150){
          return response.status(400).send({ error: 'Description extends' });

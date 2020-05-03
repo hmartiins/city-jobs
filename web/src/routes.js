@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Login from './pages/FirstsPages/Login/index.js';
 import Register from './pages/FirstsPages/Register/index.js';
+import FinishRegister from './pages/FirstsPages/FinishRegister/index.js'
 
 import ForgotPassword from './pages/FirstsPages/ForgotPassword/index.js';
 import ResetPassword from './pages/FirstsPages/ResetPassword/index.js';
@@ -18,6 +19,7 @@ export default function Routes(){
          <Switch>
             <Route path='/' exact component={ Login } />
             <Route path='/register' exact component={ Register } />
+            <Route path='/finishRegister' exact component={ FinishRegister } />
             <Route path='/forgotPassword' exact component={ ForgotPassword } />
             <Route path='/resetPassword' exact component={ ResetPassword } />
             <Route path='/profile' exact component={ Profile } />

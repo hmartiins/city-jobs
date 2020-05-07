@@ -8,6 +8,10 @@ An application to find service providers for your problem, where the person can 
 
 ![](LoginPage.png)
 
+## About the project
+
+This was the first project I decided to produce, I started to produce it because I wanted to apply the knowledge I already had, and also to learn and study new technologies and tools. I confess that when I started to develop the project, I did not stop to survey the functional and non-functional requirements, identify the entities, choose the tools I will work on, etc. This served me as a learning experience, because the project escalated in a way that I didn’t imagine, if I had done the previous steps, all this scalability would be clearer.
+
 ## Installation
 
 Cloning the Repository

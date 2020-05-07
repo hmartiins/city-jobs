@@ -45,6 +45,16 @@ router.post('/register', async (request, response) => {
    }
 });
 
+router.get('/select', async (request, response) => {
+   try {
+      const x = await (User.find({}));
+      response.send({x});
+   } catch (err) {
+      console.log(err);
+      return response.status(400).send({ error: 'Registration failed' });
+   }
+});
+
 router.post('/authenticate', async (request, response) => {
    const { email, password } = request.body;
 

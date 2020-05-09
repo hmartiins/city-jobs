@@ -31,15 +31,13 @@ const userSchema = new mongoose.Schema({
    },
    specialty: {
      type: String,
-     required: true, 
+     default: 'novato'
    },
    born: {
       type: Date,
-      required: true, 
    },
    description: {
       type: String,
-      required: true,
    }
 });
 

@@ -1,5 +1,5 @@
 const express = require('express');
-const authMiddleware = require('../middlewars/auth');
+const authMiddleware = require('../middlewares/auth');
 
 const Post = require('../models/post');
 

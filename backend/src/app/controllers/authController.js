@@ -55,6 +55,20 @@ router.get('/select', async (request, response) => {
    }
 });
 
+router.delete('/deleteUser', async (request, response) =>{
+   const { id } = request.body;
+
+   try {
+      await User.findByIdAndRemove( id );
+
+      return response.status(200).send('User deleted');
+   } catch (err) {
+      console.log(id);
+      console.log(err);
+      return response.status(400).send({ error: 'Delete failed' });
+   }
+});
+
 router.post('/authenticate', async (request, response) => {
    const { email, password } = request.body;
 

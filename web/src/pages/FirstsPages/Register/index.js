@@ -17,23 +17,22 @@ export default function Register(){
    const[passwordConfirm, setPasswordConfirm] = useState();
    
    const history = useHistory();
-
+   
    async function handleRegister(e){
       e.preventDefault();
       
-      const data = {
-         name,
-         email,
-         password,
-      }
+      const dataName = name;
+      const dataEmail = email;
+      const dataPassword = password;
+
       try {
          if(password === passwordConfirm){
-            await api.post('auth/register', data);
-            
-            alert(`Cadastrado com sucesso!`);
-            console.log('Cadastrado com sucesso no banco');
 
-            history.push('/');
+            sessionStorage.setItem('dataName', dataName);
+            sessionStorage.setItem('dataEmail', dataEmail);
+            sessionStorage.setItem('dataPassword', dataPassword);
+
+            history.push('/finishregister');
          }
          else if(password !== passwordConfirm){
             alert('As senhas não são iguais');
@@ -42,8 +41,7 @@ export default function Register(){
          console.log(err);
          alert('Erro no cadastro, verifique os campos e tente novamente');
       }
-   }
-
+   } 
    return(
       <div className={classes.container}>
          <div className={classes.registerContainer}>

@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FaAddressCard, FaAt, FaLock } from 'react-icons/fa';
 
-import api from '../../../services/api';
-
 import img1 from './img/img.svg';
 
 import classes from './styles.module.css';
@@ -15,15 +13,16 @@ export default function Register(){
    const[email, setEmail] = useState();
    const[password, setPassword] = useState();
    const[passwordConfirm, setPasswordConfirm] = useState();
-   
+
    const history = useHistory();
-   
+
    async function handleRegister(e){
       e.preventDefault();
-      
+
       const dataName = name;
       const dataEmail = email;
       const dataPassword = password;
+
 
       try {
          if(password === passwordConfirm){

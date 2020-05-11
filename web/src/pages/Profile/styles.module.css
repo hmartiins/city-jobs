@@ -1,9 +1,7 @@
-.container{
+.content{
    display: flex;
    flex: 1;
    flex-direction: row;
-}
-.content{
    margin-top: 56px;
    background: rgb(38,32,138);
    background: linear-gradient(141deg, rgba(38,32,138,1) 44%, rgba(6,4,46,1) 97%);
@@ -11,4 +9,36 @@
 }
 .avatar{
    padding: 40px 90px;
+}
+.info{
+   color: #fff;
+   margin-top: 3%;
+}
+.spanName{
+   font-size: 15px;
+   margin-left: 4px;
+   font-weight: 500;
+}
+.born{
+   margin-top: 4%;
+}
+.date{
+   font-size: 14px;
+   margin-left: 4px;
+   font-weight: 500;
+}
+.description{
+   margin-top: 3%;
+   width: 600px !important;
+}
+.descriptionText{
+   font-size: 14px;
+   margin-left: 4px;
+   font-weight: 500;
+}
+.iconsSocial{
+   margin-top: 3%;
+   width: 130px;
+   display: flex;
+   justify-content: space-between;
 }

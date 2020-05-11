@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { Avatar } from '@material-ui/core'
 import { deepPurple } from '@material-ui/core/colors';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import NavigationBar from '../NavBar/NavigationBar';
 
@@ -45,6 +46,32 @@ export default function Profile(){
          <div className={classes.content}>  
             <div className={classes.avatar}>
                <Avatar className={stylesMUI.purple}>OP</Avatar>
+            </div>
+            <div className={classes.info}>
+               <h2>
+                  Henrique Martins 
+                  <span className={classes.spanName}> 
+                     (NodeJs developer)
+                  </span>                   
+               </h2>
+               <h3 className={classes.born}>
+                  Nascimento:
+                  <span className={classes.date}>
+                     19/03/2004
+                  </span>
+               </h3>
+               <h3 className={classes.description}>
+                  Descrição: 
+                  <span className={classes.descriptionText}>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum saepe recusandae mollitia, tempore ad illo, nulla provident a dolorum accusamus? Vero asperiores, perferendis autem tempora vitae laborum eos iusto!
+                  </span>
+               </h3>
+               <div className={classes.iconsSocial}>
+                  <FaFacebook />
+                  <FaInstagram />
+                  <FaLinkedin />
+                  <FaTwitter />
+               </div>
             </div>
          </div>
       </div>   

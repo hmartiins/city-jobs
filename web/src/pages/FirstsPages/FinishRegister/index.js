@@ -37,6 +37,7 @@ export default function FinishRegister(){
          alert(`Cadastrado com sucesso!`);
          console.log('Cadastrado com sucesso no banco');
 
+         
          history.push('/');
       } catch (err) {
          console.error(err);

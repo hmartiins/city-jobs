@@ -23,7 +23,6 @@ export default function Register(){
       const dataEmail = email;
       const dataPassword = password;
 
-
       try {
          if(password === passwordConfirm){
 

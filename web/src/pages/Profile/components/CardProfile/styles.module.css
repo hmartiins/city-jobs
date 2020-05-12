@@ -1,0 +1,16 @@
+.cardContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 3%;
+}
+.rootProfile{
+  width: 80vw;
+  margin: auto;
+}
+.avatar{
+  padding: 10px 30px;
+}
+.info{
+ 
+}

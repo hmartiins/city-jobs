@@ -1,10 +1,9 @@
 .toolbar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
   height: 56px;
-  background-color: #333333;
+  background-color: #fff;
+  width: 95vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .toolbarNavigation{
   display: flex;
@@ -16,9 +15,9 @@
   margin-left: 1rem;
 }
 .toolbarLogo a{
-  color: #fff;
+  color: #3d3d3d;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .toolbarNavigationItens ul{
   list-style: none;
@@ -30,7 +29,7 @@
   padding: 0 0.8rem;
 }
 .toolbarNavigationItens a{
-  color: #fff;
+  color: #3d3d3d;
   text-decoration: none;
 }
 .a{
@@ -41,10 +40,9 @@
 }
 .toolbarNavigationItens a:hover,
 .toolbarNavigationItens a:active{
-  color: #fff;
+  color: #3d3d3d;
 }
-
-.button{
+.button{ 
   background-color: none;
   background: none;
   border-style: none;

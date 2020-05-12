@@ -4,7 +4,11 @@
    flex-direction: row;
    margin-top: 56px;
    background: rgb(76,73,129);
-   background: linear-gradient(141deg, rgba(76,73,129,1) 4%, rgba(108,99,255,1) 31%, rgba(69,67,106,1) 86%);
+   background: linear-gradient(
+      141deg, rgba(76,73,129,1) 4%, 
+      rgba(108,99,255,1) 31%, 
+      rgba(69,67,106,1) 86%
+   );
    height: 20rem;
 }
 .avatar{
@@ -41,38 +45,4 @@
    width: 130px;
    display: flex;
    justify-content: space-between;
-}
-.cardContainer{
-   display: flex;
-   flex: 1;
-   flex-direction: row;
-}
-.root{
-   margin-top: -50px !important;
-   width: 50%;
-   margin-left: 7%;
-}
-.root2{
-   margin-top: -50px !important;
-   width: 30%;
-   margin-left: 5%;
-}
-.contato{
-   margin-top: 6%;
-}
-.iconsTitleCntt{
-   font-weight: 500;
-   margin-left: 2%;
-}
-.textIconsCntt{
-   margin-top: 1%;
-   color: #6C63FF;
-   font-size: 14px;
-   margin-left: 6.5%;
-}
-.textIconsCntt:hover{
-   color: rgb(42, 36, 145);
-}
-.historyText{
-   margin-top: 4%;
 }

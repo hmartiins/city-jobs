@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fa';
 
 import NavigationBar from '../NavBar/NavigationBar';
-import Cards from './cards/index.js';
+import Cards from './components/cards/index.js';
 
 import classes from './styles.module.css';
 

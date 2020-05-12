@@ -3,8 +3,8 @@
    flex: 1;
    flex-direction: row;
    margin-top: 56px;
-   background: rgb(38,32,138);
-   background: linear-gradient(141deg, rgba(38,32,138,1) 44%, rgba(6,4,46,1) 97%);
+   background: rgb(76,73,129);
+   background: linear-gradient(141deg, rgba(76,73,129,1) 4%, rgba(108,99,255,1) 31%, rgba(69,67,106,1) 86%);
    height: 20rem;
 }
 .avatar{

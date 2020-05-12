@@ -60,7 +60,7 @@ export default function Profile(){
          </div>
          <div className={classes.content}>  
             <div className={classes.avatar}>
-               <Avatar className={stylesMUI.purple}>OP</Avatar>
+               <Avatar className={stylesMUI.purple}>HM</Avatar>
             </div>
             <div className={classes.info}>
                <h2>
@@ -96,20 +96,16 @@ export default function Profile(){
                   História fornecida por Henrique Martins
                </Typography>
                <Typography variant="h5" component="h2">
-                  a
-               </Typography>
-               <Typography className={classes.pos} color="textSecondary">
-                  adjective
+                  História
                </Typography>
                <Typography variant="body2" component="p">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
+                  <div className={classes.historyText}>
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eligendi tenetur nihil porro cupiditate quasi impedit veniam, vel, temporibus adipisci obcaecati qui distinctio eum esse, natus neque quisquam quam officia!
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus quo dolor ullam ea, officia nam tempora unde atque, ipsam, sequi nihil. Dicta eligendi unde voluptates quaerat amet vel provident!
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime perspiciatis eveniet maiores tenetur velit molestias impedit illo facere architecto explicabo, magni deleniti eos quo aliquid sit a fugiat voluptatum est?
+                  </div>
                </Typography>
             </CardContent>
-            <CardActions>
-               <Button size="small">Learn More</Button>
-            </CardActions>
          </Card>
          <Card className={classes.root2}>
             <CardContent>

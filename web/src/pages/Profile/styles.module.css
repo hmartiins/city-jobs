@@ -5,7 +5,7 @@
    margin-top: 56px;
    background: rgb(38,32,138);
    background: linear-gradient(141deg, rgba(38,32,138,1) 44%, rgba(6,4,46,1) 97%);
-   height: 18rem;
+   height: 20rem;
 }
 .avatar{
    padding: 40px 90px;
@@ -37,8 +37,39 @@
    font-weight: 500;
 }
 .iconsSocial{
-   margin-top: 3%;
+   margin-top: 4.3%;
    width: 130px;
    display: flex;
    justify-content: space-between;
+}
+.cardContainer{
+   display: flex;
+   flex: 1;
+   flex-direction: row;
+}
+.root{
+   margin-top: -50px !important;
+   width: 50%;
+   margin-left: 7%;
+}
+.root2{
+   margin-top: -50px !important;
+   width: 30%;
+   margin-left: 5%;
+}
+.contato{
+   margin-top: 6%;
+}
+.iconsTitleCntt{
+   font-weight: 500;
+   margin-left: 2%;
+}
+.textIconsCntt{
+   margin-top: 1%;
+   color: #6C63FF;
+   font-size: 14px;
+   margin-left: 6.5%;
+}
+.textIconsCntt:hover{
+   color: rgb(42, 36, 145);
 }

@@ -2,9 +2,24 @@ import React from 'react';
 
 import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { Avatar } from '@material-ui/core'
+import { 
+   Avatar, 
+   Card, 
+   CardActions, 
+   CardContent,
+   Button, 
+   Typography
+} from '@material-ui/core'
 import { deepPurple } from '@material-ui/core/colors';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { 
+   FaFacebook, 
+   FaInstagram, 
+   FaLinkedin, 
+   FaTwitter, 
+   FaRegEnvelope,
+   FaPhone,
+   FaDiscord
+} from 'react-icons/fa';
 
 import NavigationBar from '../NavBar/NavigationBar';
 
@@ -18,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
      backgroundColor: deepPurple[500],
      height: 100,
      width:  100,
-   },
+   }
  }));
 
 export default function Profile(){
@@ -73,6 +88,51 @@ export default function Profile(){
                   <FaTwitter />
                </div>
             </div>
+         </div>
+         <div className={classes.cardContainer}>
+         <Card className={classes.root}>
+            <CardContent>
+               <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  História fornecida por Henrique Martins
+               </Typography>
+               <Typography variant="h5" component="h2">
+                  a
+               </Typography>
+               <Typography className={classes.pos} color="textSecondary">
+                  adjective
+               </Typography>
+               <Typography variant="body2" component="p">
+                  well meaning and kindly.
+                  <br />
+                  {'"a benevolent smile"'}
+               </Typography>
+            </CardContent>
+            <CardActions>
+               <Button size="small">Learn More</Button>
+            </CardActions>
+         </Card>
+         <Card className={classes.root2}>
+            <CardContent>
+               <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  Contatos fornecidos por Henrique Martins
+               </Typography>
+               <Typography variant="h5" component="h2">
+                  Entre em contato
+               </Typography>
+               <div className={classes.contato}>
+                  <FaRegEnvelope className={classes.iconEmail} color="#adadad"/>
+                  <span className={classes.iconsTitleCntt}>Email:</span>
+                  <p className={classes.textIconsCntt}>hmartins224@gmail.com</p><br/>
+                  <FaPhone className={classes.iconEmail} color="#adadad"/>
+                  <span className={classes.iconsTitleCntt}>Telefone:</span>
+                  <p className={classes.textIconsCntt}>(13) 99667-0465</p><br/>
+                  <FaDiscord className={classes.iconEmail} color="#adadad"/>
+                  <span className={classes.iconsTitleCntt}>Discord:</span>
+                  <p className={classes.textIconsCntt}>Henriquinho dos Game #06391</p>
+                  <br />
+               </div>
+            </CardContent>
+            </Card>
          </div>
       </div>   
    );

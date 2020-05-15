@@ -1,7 +1,7 @@
 .cardContainer{
-  display: flex;
-  flex: 1;
-  flex-direction: row;
+  display: flex !important; 
+  flex: 1 !important;
+  flex-direction: row !important;
   margin-top: 3%;
 }
 .rootProfile{
@@ -9,8 +9,58 @@
   margin: auto;
 }
 .avatar{
-  padding: 10px 30px;
+  padding: 25px 40px;
 }
-.info{
- 
+.infoContainer{
+  margin-top: 2.4%;
+}
+.txtName{
+  font-size: 22px;
+  font-weight: 500;
+}
+.txtSpecialty{
+  margin-top: 3%;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+.button{
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #4D43F1, #6C63FF, #4D43F1);
+  background-size: 200%;
+  font-size: 0.88rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: .5s;
+  margin-top: 25%;
+}
+.contactContainer{
+  padding: 2.4% 50px;
+  margin-left: auto;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+}
+.contact{
+  margin-top: 7%;
+}
+.txtSpanTitle{
+  font-weight: 500;
+}
+.txtSpan{
+  color: #6b6b6b;
+  margin-left: 4%;
+}
+.icons{
+  margin-top: 5%;
+  margin-left: 23%;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  color: #6b6b6b; 
 }

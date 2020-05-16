@@ -43,6 +43,7 @@ export default function CardProfile(){
           </p>
           <button className={classes.button}>Contato</button>
         </div>
+        <div class={classes.linhaVertical}></div>
         <div className={classes.contactContainer}>
            <div className={classes.contact}>
             <span className={classes.txtSpanTitle}>

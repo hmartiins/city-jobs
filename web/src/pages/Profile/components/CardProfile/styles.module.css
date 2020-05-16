@@ -64,6 +64,9 @@
   justify-content: space-between;
   color: #6b6b6b; 
 }
+.iconsVetor{
+  cursor: pointer;
+}
 .linhaVertical {
   display: flex;
   height: 180px;

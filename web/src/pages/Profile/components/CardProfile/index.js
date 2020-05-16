@@ -64,10 +64,10 @@ export default function CardProfile(){
             <span className={classes.txtSpan}>40h/semana</span>
           </div>
           <div className={classes.icons}>
-            <FaFacebook />
-            <FaTwitter />
-            <FaLinkedin />
-            <FaInstagram />
+            <FaFacebook className={classes.iconsVetor}/>
+            <FaTwitter className={classes.iconsVetor}/>
+            <FaLinkedin className={classes.iconsVetor}/>
+            <FaInstagram className={classes.iconsVetor}/>
           </div>
         </div>
     </Card>

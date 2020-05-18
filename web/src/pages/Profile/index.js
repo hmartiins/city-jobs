@@ -1,18 +1,10 @@
 import React from 'react';
 
 import { useHistory } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import { Avatar } from '@material-ui/core'
-import { deepPurple } from '@material-ui/core/colors';
-import { 
-   FaFacebook, 
-   FaInstagram, 
-   FaLinkedin, 
-   FaTwitter, 
-} from 'react-icons/fa';
 
 import NavigationBar from '../NavBar/NavigationBar';
 import CardProfile from './components/CardProfile/index.js';
+import CardAbout from './components/CardAbout/index.js';
 
 import classes from './styles.module.css';
 
@@ -42,6 +34,7 @@ export default function Profile(){
             </div>  
             <div className={classes.containerContent}>
                <CardProfile />
+               <CardAbout />
             </div>
          </div>
       </div>

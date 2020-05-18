@@ -11,7 +11,8 @@ import {
   FaFacebook,
   FaTwitter,
   FaLinkedin,
-  FaInstagram
+  FaInstagram,
+  FaGlobeAmericas
 } from 'react-icons/fa';
 
 import '../../../../global.css';
@@ -68,6 +69,7 @@ export default function CardProfile(){
             <FaTwitter className={classes.iconsVetor}/>
             <FaLinkedin className={classes.iconsVetor}/>
             <FaInstagram className={classes.iconsVetor}/>
+            <FaGlobeAmericas className={classes.iconsVetor}/>
           </div>
         </div>
     </Card>

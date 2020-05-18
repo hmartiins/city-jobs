@@ -1,0 +1,11 @@
+.container{
+  display: flex !important; 
+  flex: 1 !important;
+  flex-direction: row !important;
+  margin-top: 5%;
+  margin-left: 8%;
+}
+.cardContainer{
+  height: 180px;
+  width: 20%;
+}

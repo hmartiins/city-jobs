@@ -3,10 +3,11 @@
   flex: 1 !important;
   flex-direction: row !important;
   margin-top: 3%;
+  align-items: center;
+  justify-content: center;
 }
 .rootProfile{
   width: 65vw;
-  margin: auto;
 }
 .avatar{
   padding: 25px 40px;

@@ -28,7 +28,11 @@ export default function Profile(){
    return(
       <div className={classes.container}>
          <div className={classes.z}></div>
-         <div className={classes.containerBody} style={{marginTop: 10}} onLoad={verifyLogin()}>
+         <div 
+            className={classes.containerBody} 
+            style={{marginTop: 10}} 
+            onLoad={verifyLogin()}
+         >
             <div className={classes.header}>
                <NavigationBar />
             </div>  

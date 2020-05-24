@@ -3,11 +3,11 @@
   flex: 1 !important;
   flex-direction: row !important;
   margin-top: 5%;
-  margin-left: 8%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 10%;
 }
 .cardContainer{
   height: 180px;
-  width: 65vw;
+  width: 40vw;
 }
